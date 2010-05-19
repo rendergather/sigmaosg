@@ -4,6 +4,8 @@
 #include "SulDataTri.h"
 #include "SulMath.h"
 
+// remove this line when i see it again
+
 const float CSulDataTri::getArea() const
 {
 	// vector AB
