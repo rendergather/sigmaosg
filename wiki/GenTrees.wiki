@@ -83,3 +83,5 @@ An IVE file is created which contain all trees and shaders needed to render thes
 }}}
 
 = Preview =
+
+<wiki:video url="http://www.youtube.com/watch?v=Mmhd8UtP0l8">
