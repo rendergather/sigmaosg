@@ -1,13 +1,13 @@
-#summary One-sentence summary of this page.
+#summary generate tree instancing positions based on shapefiles
 
 = Introduction =
 
-Add your content here.
+Using the GPU instancing we can create thousands of trees with very little cpu usage. This application generates a texturemap that will contain the positions for all trees based on the given shapefile.
 
+The application can also remove trees from the "position texture" based on shapefiles used as masks. For example a shapefile that describes the road positions is well suited for this, we don't want trees in the middle of the road.
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+An IVE file is created which contain all trees and shaders needed to render these trees. All you have to do is include the IVE into your scene.
+
+= Preview =
