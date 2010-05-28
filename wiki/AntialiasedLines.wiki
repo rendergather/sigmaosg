@@ -1,0 +1,13 @@
+#summary demonstrates how antialiase lines
+
+= Introduction =
+
+Getting lines to be antialiased is actually more an OpenGL state then something OpenSceneGraph does for you.
+
+= Details =
+
+coming soon...
+
+= Preview =
+
+<wiki:video url="http://www.youtube.com/watch?v=Zkbcsl_7RPs" >
