@@ -10,4 +10,76 @@ The application can also remove trees from the "position texture" based on shape
 
 An IVE file is created which contain all trees and shaders needed to render these trees. All you have to do is include the IVE into your scene.
 
+= Xml Settings =
+
+{{{
+<GEN>
+
+  <!-- Texture of trees  -->
+  <!-- Supress=true will not copy texture to all blocks  -->
+  <!-- unit=x texture unit to lookup texture(do not change) -->
+  <TEXTURE_TREE 
+    suppress="true"
+    unit="4"
+  />
+  
+  <!-- Parameters for the trees  -->
+  <!-- Everthing is in ref to 1 meter -->
+  <!-- "Radius" dist between trees-->
+  <TREE 
+    sizemultiplier="40.0" 
+    radius_between_trees="2.0"
+  />
+  
+  <!-- File not used, when run from masterconv   -->
+  <!-- Offsets, oehe!!!! Something with terrain zerro and tree file zerro     
+  offsetX= 0.5*numblocksX*blocksizeX
+  offsetY= 0.5*numblocksY*blocksizeY
+  -->
+  
+  <TERRAIN 
+    file="\\tvbuild\FACTerrain\FACTerrain\FACTerrain0_0.flt"
+    offsetx="10240"
+    offsety="10240"
+  />
+  
+  <!-- Path to file with tree area and lines -->
+  <!-- offsetz and renderme is for debug -->
+  <SHAPE 
+    file="\\tvbuild\FACTerrain\convert\trees_all.flt"
+    offsetz="100"
+    renderme="false"
+  />
+
+	<!-- Path to cultures that should mask out trees --> 
+	<!-- linedist=x buffer zone between culture and trees   --> 
+	<!-- offsetz and renderme is for debug -->
+  <MASK file="\\tvbuild\FACTerrain\convert\byg.flt" linedist="4" offsetz="150"/>
+  <MASK file="\\tvbuild\FACTerrain\convert\b.flt" linedist="4" offsetz="150"/>
+  
+  <MASK file="\\tvbuild\FACTerrain\convert\vm.flt" linedist="4" offsetz="150"/>
+  <MASK file="\\tvbuild\FACTerrain\convert\v6.flt" linedist="4" offsetz="150" renderme="true"/>
+
+  <MASK file="\\tvbuild\FACTerrain\convert\l.flt" linedist="4" offsetz="150" renderme="true"/>
+  
+  <MASK file="\\tvbuild\FACTerrain\convert\v3_5.flt" linedist="4" offsetz="150" renderme="true"/>
+  <MASK file="\\tvbuild\FACTerrain\convert\av.flt" linedist="4" offsetz="150"/>
+  <MASK file="\\tvbuild\FACTerrain\convert\vindmoeller.flt" linedist="4" offsetz="150"/>
+ 
+	<!-- Not used when run with masterconv --> 
+  <OUTPUT file="trees.ive" />
+  
+  <VIEWER suppress="false" />
+  
+  <DEBUGGING 
+    showpivots="false"
+  />
+    
+</GEN>
+
+
+
+
+}}}
+
 = Preview =
