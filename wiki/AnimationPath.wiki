@@ -1,4 +1,4 @@
-#using osg::AnimationPath
+#summary moving objects from point to point over time
 
 = Introduction =
 
