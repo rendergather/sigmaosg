@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SigmaUtil_vs2005", "SigmaUtil_vs2005.vcproj", "{C0502933-D9F5-4250-8900-50179598D516}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugDll|Win32 = DebugDll|Win32
+		DebugWithouthSTLChecks|Win32 = DebugWithouthSTLChecks|Win32
+		Release|Win32 = Release|Win32
+		ReleaseDll|Win32 = ReleaseDll|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0502933-D9F5-4250-8900-50179598D516}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C0502933-D9F5-4250-8900-50179598D516}.Debug|Win32.Build.0 = Debug|Win32
+		{C0502933-D9F5-4250-8900-50179598D516}.DebugDll|Win32.ActiveCfg = DebugDll|Win32
+		{C0502933-D9F5-4250-8900-50179598D516}.DebugDll|Win32.Build.0 = DebugDll|Win32
+		{C0502933-D9F5-4250-8900-50179598D516}.DebugWithouthSTLChecks|Win32.ActiveCfg = DebugWithouthSTLChecks|Win32
+		{C0502933-D9F5-4250-8900-50179598D516}.DebugWithouthSTLChecks|Win32.Build.0 = DebugWithouthSTLChecks|Win32
+		{C0502933-D9F5-4250-8900-50179598D516}.Release|Win32.ActiveCfg = Release|Win32
+		{C0502933-D9F5-4250-8900-50179598D516}.Release|Win32.Build.0 = Release|Win32
+		{C0502933-D9F5-4250-8900-50179598D516}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{C0502933-D9F5-4250-8900-50179598D516}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
