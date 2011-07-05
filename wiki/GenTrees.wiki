@@ -16,6 +16,7 @@ An IVE file is created which contain all trees and shaders needed to render thes
   col_geom : if "true" will create invisible collision geometry for trees
   no_geo : if "true" then geo position from object models is not used (i.e. .osg .ive files do not contain geo position data, but flt does)
   areapadding : ???? (hehe, don't remember what this does,.. something with padding)
+  suppress_shaders : if "true" the output file will not have shader code include
 -->
 
 <GEN
@@ -23,6 +24,7 @@ An IVE file is created which contain all trees and shaders needed to render thes
     col_geom="true"
     no_geo="true"
     areapadding="1"
+    suppress_shader="false"
   >
 
   <!-- Texture of trees  -->
