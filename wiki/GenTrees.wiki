@@ -15,12 +15,14 @@ An IVE file is created which contain all trees and shaders needed to render thes
   useLights : hex value i.e. "00000001" or "00000002" or "00000004"...
   col_geom : if "true" will create invisible collision geometry for trees
   no_geo : if "true" then geo position from object models is not used (i.e. .osg .ive files do not contain geo position data, but flt does)
+  areapadding : ???? (hehe, don't remember what this does,.. something with padding)
 -->
 
 <GEN
     useLights="00000001"
     col_geom="true"
     no_geo="true"
+    areapadding="1"
   >
 
   <!-- Texture of trees  -->
