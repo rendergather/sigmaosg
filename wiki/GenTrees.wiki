@@ -10,11 +10,22 @@ An IVE file is created which contain all trees and shaders needed to render thes
 = Xml Settings =
 
 {{{
-<GEN>
+<!-- General Setup Parameters 
+
+  useLights : hex value i.e. "00000001" or "00000002" or "00000004"...
+  col_geom : if "true" will create invisible collision geometry for trees
+  no_geo : if "true" then geo position from object models is not used (i.e. .osg .ive files do not contain geo position data, but flt does)
+-->
+
+<GEN
+    useLights="00000001"
+    col_geom="true"
+    no_geo="true"
+  >
 
   <!-- Texture of trees  -->
-  <!-- Supress=true will not copy texture to all blocks  -->
-  <!-- unit=x texture unit to lookup texture(do not change) -->
+  <!-- Suppress : "true" will not copy texture to all blocks  -->
+  <!-- unit : x texture unit to lookup texture -->
   <TEXTURE_TREE 
     suppress="true"
     unit="4"
@@ -27,12 +38,6 @@ An IVE file is created which contain all trees and shaders needed to render thes
     sizemultiplier="40.0" 
     radius_between_trees="2.0"
   />
-  
-  <!-- File not used, when run from masterconv   -->
-  <!-- Offsets, oehe!!!! Something with terrain zerro and tree file zerro     
-  offsetX= 0.5*numblocksX*blocksizeX
-  offsetY= 0.5*numblocksY*blocksizeY
-  -->
   
   <TERRAIN 
     file="\\tvbuild\FACTerrain\FACTerrain\FACTerrain0_0.flt"
